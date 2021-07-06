@@ -25,14 +25,22 @@ class testSimpleBars(unittest.TestCase):
     def test_loop(self):
         bs = SimpleBars("Ti  ")
         self.assertEquals(str(bs.next()), " Ti ")
+        print(bs)
         self.assertEquals(str(bs.next()), "  Ti")
+        print(bs)
         self.assertEquals(str(bs.next()), "i  T")
+        print(bs)
         self.assertEquals(str(bs.next()), "Ti  ")
+        print(bs)
         bs = SimpleBars("  iT")
         self.assertEquals(str(bs.next()), " iT ")
+        print(bs)
         self.assertEquals(str(bs.next()), "iT  ")
+        print(bs)
         self.assertEquals(str(bs.next()), "T  i")
+        print(bs)
         self.assertEquals(str(bs.next()), "  iT")
+        print(bs)
 
     def tearDown(self):
         pass
